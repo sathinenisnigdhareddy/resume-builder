@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+  <br><br>
+  <h1>Resume</h1>
+  
+  <hr />
+  <br>
+  <p class="head">Personal Details:</p>
+  <ul>
+    <li> First Name  : {{per.first_name}}</li>
+    <li>Last Name: {{per.last_name}}</li>
+    <li> Gender:  {{per.gender}}</li>
+    <li> Age:   {{per.age}}</li>
+    <li>Address :    {{per.address}}</li>
+    
+    
+  </ul>
+  <p class="head" > Contact</p>
+  <ul>
+     <li>Github Link:{{per.github}}</li>
+    <li>Email: {{per.email}}</li>
+    <li>linkedin :{{per.linkedin}}</li>
+  </ul>
+  <p class="head">Education</p>
+  <ul>
+    
+    <li>Degree:{{per.degree}}</li>
+    <li>Stream:{{per.stream}}</li>
+    <li>Year Of Passing:{{per.passing_year}}</li>
+    <li>Result: {{per.result}}</li>
+    <li>Acadamin Details:{{per.academic_detail}}</li>
+  </ul>
+  <p class="head">Experience</p>
+  <ul>
+    <li> Skill Detail:{{per.skillDetail}}</li>
+    <li>Work:{{per.work}}</li>
+  </ul>
+  <p class="head">Projects</p>
+  <ul>
+    <li>Title:{{per.title}}</li>
+    <li>Start Date :{{per.start_date}}</li>
+    <li>End Date:{{per.end_date}}</li>
+    <li>Description :{{per.description}}</li>
+  </ul>
+</div>
+<div class="right"></div>
+<div id="footer">
+  <h2 id="name"></h2></div>
+{% endblock %}
